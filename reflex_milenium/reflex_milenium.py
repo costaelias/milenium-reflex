@@ -1,6 +1,7 @@
 from rxconfig import config
 import reflex as rx
 from reflex_milenium.pages.index import index
+from reflex_milenium.pages.menu_principal import menu_principal
 
 app = rx.App(
         stylesheets= [

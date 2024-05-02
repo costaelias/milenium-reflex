@@ -9,6 +9,7 @@ from reflex_milenium.components.ant_component import result
     meta=utils.index_meta
 )
 def index() -> rx.Component:
+    click:bool = False
     return rx.box(
             rx.vstack(
                rx.box(
@@ -22,6 +23,7 @@ def index() -> rx.Component:
                     width= '50%;',
                     padding= "1em 2em 2em;",
             ),
+            rx.spacer(),
             rx.form(
                 rx.vstack(
                     rx.input(
@@ -36,9 +38,8 @@ def index() -> rx.Component:
                             "Submit", 
                             type="submit",
                             radius="full",
-                            color_scheme="blue",
-                            variant="soft",
-                            margin_left="3em"
+                            margin_left="30%",
+                            on_click=rx.redirect(path="/menu-principal",)
                     ),
                 
                 ),
@@ -53,9 +54,5 @@ def index() -> rx.Component:
             padding= "1em 2em 2em;",
             margin_top='8em'
         ),
-        
-        # rx.box(
-        #     result,
-        # ),
     )
 
