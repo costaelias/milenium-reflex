@@ -3,6 +3,7 @@ import reflex as rx
 from reflex_milenium.pages.index import index
 from reflex_milenium.pages.menu_principal import menu_principal
 from reflex_milenium.pages.registro_venta import registro_ventas
+from reflex_milenium.pages.control_stock import control_stock
 
 app = rx.App(
     title="Distrimilenium",
@@ -13,3 +14,4 @@ app = rx.App(
         "/css/styles.css"
     ]
 )
+

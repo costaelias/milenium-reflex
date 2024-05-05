@@ -1,9 +1,10 @@
 *.db
 *.py[cod]
+*.sh
+*.yml
 .venv/
 .web
 __pycache__/
-venv/
-*.yml
 public/
-*.sh
+venv/
+.vscode
